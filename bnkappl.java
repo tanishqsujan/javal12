@@ -68,7 +68,7 @@ public class bnkappl{
                     System.out.println("Terminating...");
                 }
                 else{
-                    System.out.println(accountName[accountIndex]+ "your balance is" +accountBalance[accountIndex]+ "Rs.")
+                    System.out.println(accountName[accountIndex]+ "your balance is" +accountBalance[accountIndex]+ "Rs.");
                 }
                 System.out.println("---------------");
             }
@@ -86,8 +86,22 @@ public class bnkappl{
                     System.out.println("\nEnter Amount to be deposited.");
                     double amt= sc.nextDouble();
                     accountBalance[accountIndex] +=amt;
-                    
+                    System.out.println(accountName[accountIndex]+ "your updated balance is: "+accountBalance[accountIndex]+ "Rs\n");
                 }
+                System.out.println("---------------");
+            }
+            else if(option==5){
+                System.out.println("Accounts Registered\n");
+                for(int i=100;i<size;i++){
+                    System.out.println("Account Number: "+i+ ",Name: "+accountName[i]+ ",Balance: "+accountBalance[i]+ "Rs\n");
+                }
+                System.out.println("---------------");
+            }
+            else if(option==6){
+                System.out.println("Terminating....");
+                System.out.println("Developed and Managed by Tanishq");
+                System.out.println("Built in UAE");
+                System.exit(0);
             }
         }
     }
